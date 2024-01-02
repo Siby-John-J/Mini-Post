@@ -1,0 +1,22 @@
+
+# POST http://localhost:3000/post/create
+# Content-Type: application/json
+
+# {
+#     "title": "femto",
+#     "content": "griffith",
+#     "comments": [{
+#         "auther": "guts"
+#     }],
+#     "likes": 0
+# }
+
+# PUT http://localhost:3001/comment/add
+# Content-Type: application/json
+
+# {
+#     "id" : "ca82935a-a4f3-429b-abee-7cc136fc5fb1",
+#     "content" :"the berzerker"
+# }
+
+# GET http://localhost:3000/post/get

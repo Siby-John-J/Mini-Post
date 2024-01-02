@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/poster-services/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/poster-services/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/poster-services",
+  "projects": {
+    "poster-services": {
+      "type": "application",
+      "root": "apps/poster-services",
+      "entryFile": "main",
+      "sourceRoot": "apps/poster-services/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/poster-services/tsconfig.app.json"
+      }
+    },
+    "post-service": {
+      "type": "application",
+      "root": "apps/post-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/post-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/post-service/tsconfig.app.json"
+      }
+    },
+    "comment-service": {
+      "type": "application",
+      "root": "apps/comment-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/comment-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/comment-service/tsconfig.app.json"
+      }
+    }
+  }
+}
