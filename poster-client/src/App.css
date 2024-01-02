@@ -1,0 +1,116 @@
+
+body {
+    background-color: rgb(75, 75, 75);
+}
+
+.postList {
+    /* background-color: chocolate; */
+    height: 46vw;
+    width: 83vh;
+    margin-left: 28em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Create Post */
+
+.postList .createPost {
+    /* background-color: violet; */
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.createPost input {
+    border: none;
+    outline: none;
+    height: 2em;
+    width: 15em;
+    border-radius: 7px;
+    padding-left: 4px;
+}
+
+.createPost button {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+}
+
+/* List Post */
+
+.postList .posts {
+    /* background-color: crimson; */
+    height: 86%;
+    width: 100%;
+    /* margin-top: 2em; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts .post {
+    background-color: gray;
+    height: auto;
+    width: 23em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: -8px 9px 6px 0px black;
+
+}
+
+.post .post-prop h2 {
+    margin: 0;
+}
+
+.post .post-prop {
+    /* background-color: rgb(0, 167, 167); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 7em;
+    font-family: sans-serif;
+}
+
+.post .comments {
+    /* background-color: tomato; */
+}
+
+.comments .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    margin-bottom: 1em;
+}
+
+.comments .actions input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.comments .actions button {
+    background-color: rgb(54, 0, 124);
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+li {
+    list-style: none;
+    margin-top: 10px;
+}
